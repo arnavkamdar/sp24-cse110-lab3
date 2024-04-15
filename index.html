@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arnav's Meeting Minutes</title>
+    <meta name="description" content="My website for CSE 110's Lab 2 - documenting the minutes of an imaginary (well, inspired from the Lord of the Rings) meeting!">
+    <meta name="author" content="Arnav Kamdar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="icon" type="image/png" href="Icon.png">
+  </head>
+  <body>
+    <header>
+      <h1>First convening of the Council of Elrond </h1>
+      <h2>Brainstorming of how to deal with the fate of the One Ring</h2>
+      <h3>25 October, 3018, Third Age - 11 AM to 12 PM</h3>
+      <nav>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#carryover">Carryover from last meeting</a></li>
+          <li><a href="#discussion">Discussion of Agenda Items</a></li>
+          <li><a href="#concerns">General post-meeting concerns</a></li>
+        </ul>
+      </nav>
+    </header>
+    <details>
+      <summary>More details about the meeting:</summary>
+      <p>
+        Held at Rivendell, Middle Earth. <br>
+        Members arrived several days prior to the meeting. <br>
+        Upon convening, various uninvited Hobbits too arrived on the scene and proceeded to participate in the council.
+      </p>
+    </details>
+    <main>
+      <hr> 
+      <div id="attendance">
+        <h3> <span>Attendance</span> </h3>
+        <p> Following are a list of the main attendees, marked present or uninvited</p>
+        <ul>
+          <li>Elrond: <span>Present</span> (<em>King of the Elves.</em>)</li>
+          <li>Aragorn: <span>Present</span> (<i>Heir to the throne of Gondor.</i>) </li>
+          <li>Boromir: <span>Present</span> (<em>Son of the Steward of Gondor.</em>)</li>
+          <li>Gandalf the Grey: <span>Present</span> (<i>One of Five Wizards to roam the world.</i>)</li>
+          <li>Legolas: <span>Present</span> (<em>Representative of the Woodland Elves.</em>)</li>
+          <li>Gimli: <span>Present</span> (<i>Representative of Erebor.</i>)</li>
+          <li>Frodo Baggins: <span>Present</span> (<em>Hobbit who delivered the Ring to Rivendell.</em>)</li>
+          <li>Bilbo Baggins: <span">Present</span> (<i>Former Ring Holder.</i>)</li>
+          <li>Samwise Gamgee, Meriadoc Brandybuck, Peregrin Took: <span>Uninvited but present</span> (<em>Accomplices of Frodo's.</em>)</li>
+        </ul>
+      </div>
+      <br>
+      <section id="agenda">
+        <h3>Agenda</h3>
+        <ol>
+          <li><b>Confirm the veracity</b> of the ring presented as The One Ring. </li>
+          <li><b>Discuss the fate</b> of The One Ring. </li>
+          <li><b>Assign members present</b> to the job at hand. </li>
+        </ol>
+      </section>
+      <br>
+      <div id="carryover">
+        <h3>Carryover from last meeting</h3>
+        <p>This is the first convening of the Council of Elrond. <strong>There were no previous meetings where tasks were carried over.</strong></p>
+      </div>
+      <br>
+      <section id="discussion">
+        <h3>Discussion of Agenda Items</h3>
+        <ol>
+          <li><strong>Gandalf narrated his experience</strong> with the Ring and fire, and uttered the black speech inscribed on The Ring, to the displeasure of Elrond. This dispelled doubts of its veracity.</li>
+          <li>The Ring was <strong>decided to be destroyed</strong>, as it would corrupt all those who used it. If one was uncorruptable, it was agreed that the Nazgul would hunt them down. Thus, it needs to be destroyed in the <strong>heart of Mount Doom.</strong></li>
+          <li>Bilbo proposed that he take the Ring, as did various others. However, internal politics between races led to no unanimous answer. <strong>Frodo suggested that he take the Ring</strong>, and many pledged their allegiance to him.</li>
+          <li>Various eavesdropping Hobbits (listed in the attendance) appeared out of the shadows, decided that they too would join the Fellowship formed. </li>
+          <li>Fellowship consists of Frodo, Sam, Merry, Pippin, Gandalf, Aragorn, Legolas, Gimli, Boromir. </li>
+        </ol>
+      </section>
+      <br>
+      <div id="concerns">
+        <h3>General post-meeting concerns </h3>
+        <p>
+          There appears to be friction between Legolas and Gimli: both are working in favor of opposing factions of Middle Earth. <br> 
+          Boromir may be a threat to the company: he seems determined to obtain the Ring for Gondor, rather than working towards destroying it.
+        </p>
+      </div>
+      <hr>
+      <img src="CouncilAttendance.png" alt="Picture of members in attendance" width="600" height="300"> <br>
+      <img src="CouncilofElrondMindMap.png" alt="Diagram of decision reached by the Council" width="600" height="300"> <br> 
+      <audio controls>
+        <source src="Fellowship.mp3" type="audio/mp3">
+        Your browser does not support the audio element. This is an audio recording of Elrond declaring the Fellowship.
+      </audio> <br>
+      <video width="640" height="320" controls>
+        <source src="SwordBowAxe.mp4" type="video/mp4">
+        Your browser does not support the video tag. This is a video recording of Gimli, Legolas, and Aragorn committing their allegiance to Frodo. 
+      </video> <br>
+    </main>
+    <hr>
+    <h3>Provide your feedback!</h3><br>
+    <form action="/submit-form" method="post">
+      <fieldset>
+        <legend>Personal questions</legend>
+        <label for="name">Please enter your name</label>
+        <input type="text" id="name" name="Please enter your name"><br>
+        <label for="join-fellowship">Are you interested in joining the Fellowship of the Ring?</label><br>
+        <input type="radio" name="join-fellowship" id="join-fellowship:" value="Yes">Yes<br>
+        <input type="radio" name="join-fellowship" id="join-fellowship:" value="No">No<br>
+        <label for="inquirydate">Enter the date of your feedback submission:</label><br>
+        <input type="date" id="inquirydate" name="inquirydate">
+      </fieldset>
+      <fieldset>
+        <legend>Feedback specific questions</legend>
+        <label for="feedback-choices">Select one of the following:</label><br>
+        <select id="feedback-choices">
+            <option value="Very satisfied!">Very satisfied!</option>
+            <option value="Somewhat satisfied.">Somewhat satisfied.</option>
+            <option value="Neither here nor there.">Neither here nor there.</option>
+            <option value="Vaguely dissatisfied.">Vaguely dissatisfied.</option>
+            <option value="Extremely dissatisfied.">Extremely dissatisfied.</option>
+        </select><br>
+        <input type="checkbox" name="confirmation:" id="checkbox" value="I attest that I have read the meeting notes in their entirety and this is my accurate opinion.">I attest that I have read the meeting notes in their entirety and this is my accurate opinion.<br>
+        <label for="feedback-multiselect">Please select one that applies:</label><br>
+        <input list="feedback-multisel" id="feedback-multiselect" name="feedback">
+        <datalist id="feedback-multisel">
+            <option value="1">The information provided is inaccurate.</option>
+            <option value="2">My opinions were misrepresented by these notes (I am an attendee of the Council).</option>
+            <option value="3">I love how detailed the minutes were.</option>
+            <option value="4">I think that this should be better structured.</option>
+            <option value="5">I don't know, I'm just here for the vibes.</option>
+        </datalist><br>
+        <label for="message">Optional: Enter other feedback:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+      </fieldset>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <button type="button">Submit!</button>
+      </a>
+    </form>
+    <hr>
+    <footer>
+      <h3>Footnote:</h3>
+      <p>Since these minutes of a meeting are heavily inspired from the Lord of the Rings, these are some sources I used:</p>
+      <ul>
+        <li><a href="https://drawio-app.com/blog/whiteboarding-for-ideation/">Image of mind map</a></li>
+        <li><a href="https://lotr.fandom.com/wiki/Council_of_Elrond">Image of Council</a></li>
+        <li><a href="https://tolkiengateway.net/wiki/Council_of_Elrond">Attendance information</a></li>
+        <li><a href="https://www.youtube.com/watch?v=hyquiA8RL1Q">LOTR video clip</a></li>
+        <li><a href="https://www.youtube.com/watch?v=J8cU48PD0LI">LOTR audio clip</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Submit button</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
