@@ -1,0 +1,76 @@
+.highlightRed {
+    /* Elements that should be highlighted red */
+}
+.highlightGreen {
+    /* Elements that should be highlighted green */
+}
+#feedback-choices {
+    /* Styling for the feedback-choices id */
+    /* Apply a light background color here */
+}
+#message {
+    /* Styling for the message area in the feedback form */
+    /* Apply a light backgrounc color here too */
+}
+* {
+    /* Apply font sizing here, and make sure to apply different font sizing for specific sections. */
+    /* Alternatively, apply font color here. */
+}
+h1 {
+    /* Add a good font for h1, and change the font color to brown. Also, make this sticky. */
+}
+a[href^="https"] {
+    /* Change all links to be blue fonted only. */
+    &:active {
+        /* Add styling for links when they are being held. Maybe color them differently (red or purple). */
+    }
+}
+input[type="radio"] {
+    /* Change all radio options to have specific styling */
+}
+nav:hover {
+    /* Add styling for the nav dropdown when it is hovered over (maybe a background color change or a size change) */
+}
+div, section {
+    /* Add margins and box model styling to div and section elements (parts of the body) */
+}
+video ~ img {
+    /* Provide margins, positioning (using units), width, height, borders for images. */
+}
+video + audio {
+    /* Provide margins, positioning (using units), width, height, borders for audio box. */
+}
+form legend {
+    /* Specific styling for subheadings inside the form */
+}
+main > p {
+    /* Paragraphs in main (Note: these should be captions for the img/audio/video files, add these to the HTML) should have a smaller font size */
+}
+.nav-list {
+    /* All elements in nav can be arranged side by side using flex. */
+}
+.attendance {
+    /* Create a grid for the attendees, see if we can get name, attendance, and description in separate grids. */
+}
+h3.is-body {
+    /* Add is-body tag to all h3 elements inside the body, and do special styling for them. */
+}
+form:has(fieldset) {
+    /* Add a box size to the form */
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        /* Small font size */
+    }
+}
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+    body {
+        /* Medium font size */
+    }
+}
+@media only screen and (min-width: 1025px) {
+    body {
+        /* Large font size */
+    }
+}
