@@ -10,12 +10,10 @@
     color: color-mix(in srgb, green 90%, white 10%);
 }
 #feedback-choices {
-    /* Styling for the feedback-choices id */
     /* Apply a light background color here */
     background-color: var(--light-grey);
 }
 #message:hover, #feedback-multisel:hover {
-    /* Styling for the message area in the feedback form */
     /* Apply a light background color here too */
     color:color(srgb-linear 10% 10% 10% / 100%);
     background-color: var(--another-light-grey, #e0dfdf)
@@ -30,6 +28,7 @@ h1 {
 }
 a[href^="https"] {
     /* Change all links to be blue fonted only. */
+    color:blue;
     &:active {
         /* Add styling for links when they are being held. Maybe color them differently (red or purple). */
         color:red;
@@ -42,19 +41,36 @@ input[type="radio"] {
 summary:hover {
     /* Add styling for the summary dropdown when it is hovered over (maybe a background color change or a size change) */
     background-color:var(--light-grey);
+    color:red;
+}
+summary {
     /* Change size of box to be smaller and end where text ends, otherwise change this color later. */
+    margin-right:60em;
 }
 div, section {
     /* Add margins and box model styling to div and section elements (parts of the body) */
+    padding-left:1vw;
 }
-video ~ img {
+div ~ img {
     /* Provide margins, positioning (using units), width, height, borders for images. */
+    border: 2px solid black;
+    padding:3pt 3pt 3pt 3pt;
 }
-video + audio {
+body > * {
+    margin: 0vw 1vw 0vw 1vw;
+}
+img + div.audio-container {
     /* Provide margins, positioning (using units), width, height, borders for audio box. */
+    border-width:2px;
+    border-color:#000000;
+    border-style:solid;
+    border-radius:2.5pc;
+    padding:10pt;
+    margin-right:60rem;
 }
 form legend {
     /* Specific styling for subheadings inside the form */
+    margin:auto;
 }
 main > p {
     /* Paragraphs in main (Note: these should be captions for the img/audio/video files, add these to the HTML) should have a smaller font size */
@@ -70,9 +86,7 @@ h3.is-body {
 }
 form:has(fieldset) {
     /* Add a box size to the form */
-}
-#feedback-multisel {
-    /* Increase size of boxes shown, if possible. */
+    margin-right:60vw;
 }
 @media only screen and (max-width: 800px) {
     body {
