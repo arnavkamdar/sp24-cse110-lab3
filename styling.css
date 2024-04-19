@@ -1,8 +1,10 @@
 .highlightRed {
     /* Elements that should be highlighted red */
+    color:rgb(255, 0, 0);
 }
 .highlightGreen {
     /* Elements that should be highlighted green */
+    color: color-mix(in srgb, green 90%, white 10%);
 }
 #feedback-choices {
     /* Styling for the feedback-choices id */
@@ -10,19 +12,22 @@
 }
 #message {
     /* Styling for the message area in the feedback form */
-    /* Apply a light backgrounc color here too */
+    /* Apply a light background color here too */
+    color:color(srgb-linear 10% 10% 10% / 100%);
 }
 * {
     /* Apply font sizing here, and make sure to apply different font sizing for specific sections. */
-    /* Alternatively, apply font color here. */
+    color:#000000;
 }
 h1 {
     /* Add a good font for h1, and change the font color to brown. Also, make this sticky. */
+    color:hsl(30, 100%, 25%);
 }
 a[href^="https"] {
     /* Change all links to be blue fonted only. */
     &:active {
         /* Add styling for links when they are being held. Maybe color them differently (red or purple). */
+        color:red;
     }
 }
 input[type="radio"] {
