@@ -11,7 +11,7 @@
   <body>
     <header>
       <h1>First convening of the Council of Elrond </h1>
-      <h2>Brainstorming of how to deal with the fate of the One Ring</h2>
+      <h2>Brainstorming how to deal with the fate of the One Ring</h2>
       <h3>25 October, 3018, Third Age - 11 AM to 12 PM</h3>
       <nav>
         <ul>
@@ -34,7 +34,7 @@
     <main>
       <hr> 
       <div id="attendance">
-        <h3> <span>Attendance</span> </h3>
+        <h3 class="is-body"> <span>Attendance</span> </h3>
         <p> Following are a list of the main attendees, marked present or uninvited</p>
         <ul>
           <li>Elrond: <span class="highlightGreen">Present</span> (<em>King of the Elves.</em>)</li>
@@ -50,7 +50,7 @@
       </div>
       <br>
       <section id="agenda">
-        <h3>Agenda</h3>
+        <h3 class="is-body">Agenda</h3>
         <ol>
           <li><b>Confirm the veracity</b> of the ring presented as The One Ring. </li>
           <li><b>Discuss the fate</b> of The One Ring. </li>
@@ -59,12 +59,12 @@
       </section>
       <br>
       <div id="carryover">
-        <h3>Carryover from last meeting</h3>
+        <h3 class="is-body">Carryover from last meeting</h3>
         <p>This is the first convening of the Council of Elrond. <strong>There were no previous meetings where tasks were carried over.</strong></p>
       </div>
       <br>
       <section id="discussion">
-        <h3>Discussion of Agenda Items</h3>
+        <h3 class="is-body">Discussion of Agenda Items</h3>
         <ol>
           <li><strong>Gandalf narrated his experience</strong> with the Ring and fire, and uttered the black speech inscribed on The Ring, to the displeasure of Elrond. This dispelled doubts of its veracity.</li>
           <li>The Ring was <strong>decided to be destroyed</strong>, as it would corrupt all those who used it. If one was uncorruptable, it was agreed that the Nazgul would hunt them down. Thus, it needs to be destroyed in the <strong>heart of Mount Doom.</strong></li>
@@ -75,7 +75,7 @@
       </section>
       <br>
       <div id="concerns">
-        <h3>General post-meeting concerns </h3>
+        <h3 class="is-body">General post-meeting concerns </h3>
         <p>
           There appears to be friction between Legolas and Gimli: both are working in favor of opposing factions of Middle Earth. <br> 
           Boromir may be a threat to the company: he seems determined to obtain the Ring for Gondor, rather than working towards destroying it.
@@ -83,17 +83,21 @@
       </div>
       <hr>
       <img src="CouncilAttendance.png" alt="Picture of members in attendance" width="600" height="300"> <br>
+      <p>Pictures of members in attendance</p>
       <img src="CouncilofElrondMindMap.png" alt="Diagram of decision reached by the Council" width="600" height="300">
+      <p>Diagram of decision reached by the Council</p>
       <div class="audio-container">
         <audio controls>
           <source src="Fellowship.mp3" type="audio/mp3">
           Your browser does not support the audio element. This is an audio recording of Elrond declaring the Fellowship.
         </audio> <br>
       </div>
+      <p>Audio of the decision reached.</p>
       <video width="640" height="320" controls>
         <source src="SwordBowAxe.mp4" type="video/mp4">
         Your browser does not support the video tag. This is a video recording of Gimli, Legolas, and Aragorn committing their allegiance to Frodo. 
       </video> <br>
+      <p>Video of the meeting.</p>
     </main>
     <hr>
     <h3>Provide your feedback!</h3><br>
@@ -118,7 +122,7 @@
             <option value="Vaguely dissatisfied.">Vaguely dissatisfied.</option>
             <option value="Extremely dissatisfied.">Extremely dissatisfied.</option>
         </select><br>
-        <input type="checkbox" name="confirmation:" id="checkbox" value="I attest that I have read the meeting notes in their entirety and this is my accurate opinion.">I attest that I have read the meeting notes in their entirety and this is my accurate opinion.<br>
+        <input class="hide" type="checkbox" name="confirmation:" id="checkbox" value="I attest that I have read the meeting notes in their entirety and this is my accurate opinion."><p class="hide">I attest that I have read the meeting notes in their entirety and this is my accurate opinion.</p><br>
         <label for="feedback-multiselect">Please select one that applies:</label><br>
         <input list="feedback-multisel" id="feedback-multiselect" name="feedback">
         <datalist id="feedback-multisel">
