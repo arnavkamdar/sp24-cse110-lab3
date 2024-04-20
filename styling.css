@@ -1,10 +1,6 @@
 :root {
     --light-grey: #acacac;
 }
-.highlightRed {
-    /* Elements that should be highlighted red */
-    color:rgb(255, 0, 0);
-}
 .highlightGreen {
     /* Elements that should be highlighted green */
     color: color-mix(in srgb, green 90%, white 10%);
@@ -41,7 +37,7 @@ a[href^="https"] {
     color:blue;
     &:active {
         /* Add styling for links when they are being held. Maybe color them differently (red or purple). */
-        color:red;
+        color:rgb(255, 0, 0);
     }
 }
 input[type="radio"] {
@@ -51,7 +47,7 @@ input[type="radio"] {
 summary:hover {
     /* Add styling for the summary dropdown when it is hovered over (maybe a background color change or a size change) */
     background-color:var(--light-grey);
-    color:red;
+    color:rgba(255,0,0,1);
 }
 summary {
     /* Change size of box to be smaller and end where text ends, otherwise change this color later. */
@@ -93,9 +89,34 @@ main > p {
 }
 .nav-list {
     /* All elements in nav can be arranged side by side using flex. */
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    list-style-type:none;
+    padding:0;
+    max-width: 1000px;
 }
-.attendance {
+.grid-container {
     /* Create a grid for the attendees, see if we can get name, attendance, and description in separate grids. */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+.name {
+    justify-self: start;
+    grid-column-start: 1;
+    grid-column-end:2;
+} 
+.status {
+    justify-self: center;
+    grid-column-start:2;
+    grid-column-end:3;
+}
+.descript {
+    justify-self: end;
+    grid-column-start:3;
+    grid-column-end:4;
 }
 h3.is-body {
     /* Add is-body tag to all h3 elements inside the body, and do special styling for them. */

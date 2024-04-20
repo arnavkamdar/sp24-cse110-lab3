@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="icon" type="image/png" href="Icon.png">
     <link rel="stylesheet" type="text/css" href="styling.css">
+    <style>
+      .highlightRed {
+      /* Elements that should be highlighted red */
+      color:rgb(255, 0, 0);
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -14,7 +20,7 @@
       <h2>Brainstorming how to deal with the fate of the One Ring</h2>
       <h3>25 October, 3018, Third Age - 11 AM to 12 PM</h3>
       <nav>
-        <ul>
+        <ul class="nav-list">
           <li><a href="#attendance">Attendance</a></li>
           <li><a href="#agenda">Agenda</a></li>
           <li><a href="#carryover">Carryover from last meeting</a></li>
@@ -36,16 +42,18 @@
       <div id="attendance">
         <h3 class="is-body"> <span>Attendance</span> </h3>
         <p> Following are a list of the main attendees, marked present or uninvited</p>
-        <ul>
-          <li>Elrond: <span class="highlightGreen">Present</span> (<em>King of the Elves.</em>)</li>
-          <li>Aragorn: <span class="highlightGreen">Present</span> (<i>Heir to the throne of Gondor.</i>) </li>
-          <li>Boromir: <span class="highlightGreen">Present</span> (<em>Son of the Steward of Gondor.</em>)</li>
-          <li>Gandalf the Grey: <span class="highlightGreen">Present</span> (<i>One of Five Wizards to roam the world.</i>)</li>
-          <li>Legolas: <span class="highlightGreen">Present</span> (<em>Representative of the Woodland Elves.</em>)</li>
-          <li>Gimli: <span class="highlightGreen">Present</span> (<i>Representative of Erebor.</i>)</li>
-          <li>Frodo Baggins: <span class="highlightGreen">Present</span> (<em>Hobbit who delivered the Ring to Rivendell.</em>)</li>
-          <li>Bilbo Baggins: <span class="highlightGreen">Present</span> (<i>Former Ring Holder.</i>)</li>
-          <li>Samwise Gamgee, Meriadoc Brandybuck, Peregrin Took: <span class="highlightRed">Uninvited but present</span> (<em>Accomplices of Frodo's.</em>)</li>
+        <ul class="grid-container">
+          <li><span class="name">Elrond:</span><span class="status highlightGreen">Present</span><span class="descript"> (<em>King of the Elves.</em>)</span></li>
+          <li><span class="name">Aragorn:</span><span class="status highlightGreen">Present</span><span class="descript"> (<i>Heir to the throne of Gondor.</i>)</span> </li>
+          <li><span class="name">Boromir:</span><span class="status highlightGreen">Present</span> <span class="descript"> (<em>Son of the Steward of Gondor.</em>)</span></li>
+          <li><span class="name">Gandalf the Grey:</span><span class="status highlightGreen">Present</span> <span class="descript"> (<i>One of Five Wizards to roam the world.</i>)</span></li>
+          <li><span class="name">Legolas:</span><span class="status highlightGreen">Present</span> <span class="descript"> (<em>Representative of the Woodland Elves.</em>)</span></li>
+          <li><span class="name">Gimli:</span><span class="status highlightGreen">Present</span> <span class="descript"> (<i>Representative of Erebor.</i>)</span></li>
+          <li><span class="name">Frodo Baggins:</span><span class="status highlightGreen">Present</span> <span class="descript"> (<em>Hobbit who delivered the Ring to Rivendell.</em>)</span></li>
+          <li><span class="name">Bilbo Baggins:</span><span class="status highlightGreen">Present</span> <span class="descript"> (<i>Former Ring Holder.</i>)</span></li>
+          <li><span class="name">Samwise Gamgee:</span><span class="highlightRed">Uninvited but present</span><span class="descript"> (<em>Accomplice of Frodo's.</em>)</span></li>
+          <li><span class="name">Meriadoc Brandybuck:</span><span class="highlightRed">Uninvited but present</span><span class="descript"> (<em>Accomplice of Frodo's.</em>)</span></li>
+          <li><span class="name">Peregrin Took:</span><span style="color:red">Uninvited but present</span><span class="descript"> (<em>Accomplice of Frodo's.</em>)</span></li>
         </ul>
       </div>
       <br>
