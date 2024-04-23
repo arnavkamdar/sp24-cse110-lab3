@@ -25,12 +25,20 @@ h1 {
     text-decoration:underline;
     position:sticky;
     top: 0;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:40px;
 }
 h2 {
     text-align:center;
     text-decoration:underline;
     position:relative;
     top: 5;
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:30px;
 }
 a[href^="https"] {
     /* Change all links to be blue fonted only. */
@@ -102,6 +110,8 @@ main > p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10px;
+    justify-self:stretch;
+    column-gap:15px;
 }
 .name {
     justify-self: start;
@@ -133,15 +143,21 @@ form:has(fieldset) {
 @media only screen and (max-width: 800px) {
     body {
         /* Small font size */
+        font-size: 14px;
+        .grid-container{
+            list-style-type: none;
+        }
     }
 }
 @media only screen and (min-width: 801px) and (max-width: 1024px) {
     body {
         /* Medium font size */
+        font-size: 16px;
     }
 }
 @media only screen and (min-width: 1025px) {
     body {
         /* Large font size */
+        font-size: 18px;
     }
 }
