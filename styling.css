@@ -84,12 +84,19 @@ img + div.audio-container {
     border-radius:2.5pc;
     padding:10pt;
     margin-right:60rem;
+    margin-left:auto;
+    margin-bottom:auto;
+    margin-top:auto;
     max-width: 600px;
     min-width: 300px;
 }
 form legend {
     /* Specific styling for subheadings inside the form */
     margin:auto;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
 }
 main > p {
     /* Paragraphs in main (Note: these should be captions for the img/audio/video files, add these to the HTML) should have a smaller font size */
